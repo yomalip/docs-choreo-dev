@@ -3299,20 +3299,18 @@ document.addEventListener('DOMContentLoaded', function() {
 <h2 id="use-multiple-continuous-deployment-pipelines-within-a-component">Use multiple continuous deployment pipelines within a component<a class="headerlink" href="#use-multiple-continuous-deployment-pipelines-within-a-component" title="Permanent link">&para;</a></h2>
 <h3 id="prerequisites_5">Prerequisites<a class="headerlink" href="#prerequisites_5" title="Permanent link">&para;</a></h3>
 <ul>
-<li>To use multiple continuous deployment pipelines in the deploy page of a component, you must have more than 1 continuous deployment pipelines assigned to the project of that component.</li>
+<li>To use multiple continuous deployment pipelines on a component's deploy page, the component's project must have more than one continuous deployment pipeline assigned.</li>
 </ul>
-<p>To use multiple continuous deployment pipelines in a component follow the steps given below,</p>
+<p>To use multiple continuous deployment pipelines in a component, follow the steps given below:</p>
 <ol>
 <li>Sign in to <a href="https://console.choreo.dev/">Choreo</a>.</li>
-<li>In the Choreo Console, go to the top navigation menu and click <strong>Organization</strong>. Then select your organization.</li>
-<li>Click the project that has the component you want to use multiple continuous deployment pipelines.</li>
-<li>Click the component you want to use multiple continuous deployment pipelines.</li>
+<li>In the Choreo Console top navigation menu, select the Organization, then the Project and finally the Component where you want to use multiple continuous deployment pipelines.</li>
 <li>In the left navigation menu, click <strong>DevOps</strong> and then click <strong>CD Pipelines</strong>.</li>
 <li>
-<p>At the top of the page, you can see a dropdown next to the Deployment Track/Version dropdown. This dropdown allows you to select the continuous deployment pipeline you want to use to deploy the component.</p>
+<p>At the top of the page, click on the dropdown next to the Deployment Track/Version dropdown and choose the continuous deployment pipeline you want to use to deploy the component.</p>
 <div class="admonition info">
 <p class="admonition-title">Note</p>
-<p>The user will be able to see all the continuous deployment pipelines assigned to the project and select one of them to deploy the component. Existing permissions will be enforced to allow deployment and promotion of the component for specific environments.</p>
+<p>The user will be able to view all continuous deployment pipelines assigned to the project and select one to deploy the component. Existing permissions will continue to control deployment and promotion access for specific environments.</p>
 </div>
 </li>
 </ol>
