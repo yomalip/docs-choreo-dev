@@ -12,20 +12,20 @@
         <meta name="author" content="WSO2">
       
       
-        <link rel="canonical" href="https://wso2.com/choreo/docs/develop-components/develop-mcp-servers/develop-a-mcp-server/">
+        <link rel="canonical" href="https://wso2.com/choreo/docs/develop-components/develop-integrations/develop-an-integration-as-an-api-service/">
       
       
-        <link rel="prev" href="../../develop-integrations/develop-a-manual-task/">
+        <link rel="prev" href="../../develop-an-external-consumer/">
       
       
-        <link rel="next" href="../../work-with-the-micro-integrator-runtime-in-choreo/">
+        <link rel="next" href="../develop-an-event-handler/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
     
     
       
-        <title>Develop a MCP Server - Choreo Documentation | AI-Native Internal Developer Platform</title>
+        <title>Develop an WSO2 MI integration as an API Service - Choreo Documentation | AI-Native Internal Developer Platform</title>
       
     
     
@@ -140,7 +140,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#develop-a-mcp-server" class="md-skip">
+        <a href="#develop-an-integration-as-an-api-service" class="md-skip">
           Skip to content
         </a>
       
@@ -340,7 +340,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Develop a MCP Server
+              Develop an WSO2 MI integration as an API Service
             
           </span>
         </div>
@@ -1442,16 +1442,16 @@ document.addEventListener('DOMContentLoaded', function() {
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_6" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_6" checked>
       
       
       
@@ -1460,75 +1460,12 @@ document.addEventListener('DOMContentLoaded', function() {
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_7_6">
           <span class="md-nav__icon md-icon"></span>
           Develop Integrations
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../develop-integrations/develop-an-integration-with-integration-studio/" class="md-nav__link">
-        Develop an Integration with Integration Studio
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../develop-integrations/develop-an-event-handler/" class="md-nav__link">
-        Develop an Event Handler
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../develop-integrations/develop-a-scheduled-task/" class="md-nav__link">
-        Develop a Scheduled Task
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../develop-integrations/develop-a-manual-task/" class="md-nav__link">
-        Develop a Manual Task
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
           
             
               
@@ -1546,12 +1483,12 @@ document.addEventListener('DOMContentLoaded', function() {
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Develop a MCP Server
+          Develop an WSO2 MI integration as an API Service
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Develop a MCP Server
+        Develop an WSO2 MI integration as an API Service
       </a>
       
         
@@ -1577,22 +1514,29 @@ document.addEventListener('DOMContentLoaded', function() {
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-1-create-a-mcp-server-component" class="md-nav__link">
-    Step 1: Create a MCP Server component
+  <a href="#step-1-create-the-integration-component" class="md-nav__link">
+    Step 1: Create the integration component
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-build" class="md-nav__link">
-    Step 2: Build
+  <a href="#step-2-test-the-integration" class="md-nav__link">
+    Step 2: Test the integration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-deploy" class="md-nav__link">
-    Step 3: Deploy
+  <a href="#step-4-observe-the-integration" class="md-nav__link">
+    Step 4: Observe the integration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-publish-the-integration-component" class="md-nav__link">
+    Step 5: Publish the integration component
   </a>
   
 </li>
@@ -1601,6 +1545,69 @@ document.addEventListener('DOMContentLoaded', function() {
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../develop-an-event-handler/" class="md-nav__link">
+        Develop an Event Handler
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../develop-a-scheduled-task/" class="md-nav__link">
+        Develop a Scheduled Task
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../develop-a-manual-task/" class="md-nav__link">
+        Develop a Manual Task
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deploy-mcp-servers/deploy-a-mcp-server/" class="md-nav__link">
+        Deploy a MCP Server
+      </a>
     </li>
   
 
@@ -1910,6 +1917,20 @@ document.addEventListener('DOMContentLoaded', function() {
     <li class="md-nav__item">
       <a href="../../use-configuration-form/" class="md-nav__link">
         Use Configuration Form for Managing Configurations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connect-to-remote-dependencies-while-developing/" class="md-nav__link">
+        Connect to Remote Dependencies While Developing
       </a>
     </li>
   
@@ -3964,22 +3985,29 @@ document.addEventListener('DOMContentLoaded', function() {
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-1-create-a-mcp-server-component" class="md-nav__link">
-    Step 1: Create a MCP Server component
+  <a href="#step-1-create-the-integration-component" class="md-nav__link">
+    Step 1: Create the integration component
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-build" class="md-nav__link">
-    Step 2: Build
+  <a href="#step-2-test-the-integration" class="md-nav__link">
+    Step 2: Test the integration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-deploy" class="md-nav__link">
-    Step 3: Deploy
+  <a href="#step-4-observe-the-integration" class="md-nav__link">
+    Step 4: Observe the integration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-publish-the-integration-component" class="md-nav__link">
+    Step 5: Publish the integration component
   </a>
   
 </li>
@@ -3999,65 +4027,59 @@ document.addEventListener('DOMContentLoaded', function() {
                   
 
 
-<h1 id="develop-a-mcp-server">Develop a MCP Server<a class="headerlink" href="#develop-a-mcp-server" title="Permanent link">&para;</a></h1>
-<p>Choreo allows you to create and deploy MCP Server applications in Python and Node.js. </p>
-<p>In this guide, you will:</p>
-<ul>
-<li>Deploy an stdio-based <a href="https://github.com/github/github-mcp-server">github-mcp-server</a> in Choreo  over SSE (Server-Sent Events) using a <code>NodeJs</code> buildpack. </li>
-</ul>
+<h1 id="develop-an-integration-as-an-api-service">Develop an integration as an API service<a class="headerlink" href="#develop-an-integration-as-an-api-service" title="Permanent link">&para;</a></h1>
+<p>Choreo simplifies the process of building, deploying, and managing integration components, making it easy to expose integrations as APIs. This guide walks you through the steps to expose an integration as a managed API service in Choreo.</p>
+<p>In this guide, you will:
+- Create a component to expose an integration using a sample from the <a href="https://github.com/wso2/choreo-samples">Choreo samples repository</a>.
+- Deploy, test, and observe the integration component.
+- Publish the integration component as an API to the Choreo Developer Portal.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To develop integrations for <strong>Manual Task</strong> and <strong>Schedule Task</strong> components in Choreo, use the <strong>automation mode</strong> in the WSO2 Micro Integrator. See <a href="https://mi.docs.wso2.com/en/latest/install-and-setup/install/running-the-mi-in-automation-mode/">Running MI in Automation Mode</a>.</p>
+</div>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ol>
-<li>
-<p>If you're signing in to the Choreo Console for the first time, create an organization:</p>
-<ol>
-<li>Go to <a href="https://console.choreo.dev/">https://console.choreo.dev/</a> and sign in using your preferred method.</li>
+<li>If you're signing in to the Choreo Console for the first time, create an organization:<ul>
+<li>Go to <a href="https://console.choreo.dev/">https://console.choreo.dev/</a> and sign in.</li>
 <li>Enter a unique organization name. For example, <code>Stark Industries</code>.</li>
 <li>Read and accept the privacy policy and terms of use.</li>
-<li>Click <strong>Create</strong>.</li>
-</ol>
-<p>This creates the organization and opens the <strong>Project Home</strong> page of the default project created for you.</p>
-</li>
-<li>
-<p>Create a <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token">GitHub Personal Access Token (PAT)</a> for your account.</p>
+<li>Click <strong>Create</strong>. This creates the organization and opens the <strong>Project Home</strong> page.</li>
+</ul>
 </li>
 </ol>
-<h2 id="step-1-create-a-mcp-server-component">Step 1: Create a MCP Server component<a class="headerlink" href="#step-1-create-a-mcp-server-component" title="Permanent link">&para;</a></h2>
-<p>To create a mcp server component, follow these steps:</p>
+<h2 id="step-1-create-the-integration-component">Step 1: Create the integration component<a class="headerlink" href="#step-1-create-the-integration-component" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Go to <a href="https://console.choreo.dev/">https://console.choreo.dev/</a> and sign in. This opens the project home page.</li>
+<li>Go to <a href="https://console.choreo.dev/">https://console.choreo.dev/</a> and sign in. This opens the <strong>Project Home</strong> page.</li>
 <li>If you already have one or more components in your project, click <strong>+ Create</strong>. Otherwise, proceed to the next step.</li>
-<li>Click <strong>View All Component Types</strong> link button.</li>
-<li>Click the <strong>MCP Server</strong> card.</li>
+<li>Click the <strong>Service</strong> card.</li>
+<li>Click <strong>Use Public GitHub Repository</strong>.</li>
 <li>
-<p>Under <strong>MCP Server Metadata</strong>, enter the following details:</p>
+<p>Enter the following repository details:</p>
 <table>
 <thead>
 <tr>
 <th><strong>Field</strong></th>
-<th><strong>Value</strong></th>
+<th><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Server Package</strong></td>
-<td>@modelcontextprotocol/server-github</td>
+<td><strong>Repository URL</strong></td>
+<td><a href="https://github.com/wso2/choreo-samples">https://github.com/wso2/choreo-samples</a></td>
 </tr>
 <tr>
-<td><strong>Run Command</strong></td>
-<td>npx -y @modelcontextprotocol/server-github</td>
+<td><strong>Branch</strong></td>
+<td><strong><code>main</code></strong></td>
+</tr>
+<tr>
+<td><strong>Component Directory</strong></td>
+<td><code>/hello-world-mi</code></td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>Select <strong>NodeJs</strong> as the buildpack.</p>
-</li>
-<li>
-<p>Provide component display name, name and description:</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>The <strong>Component Name</strong> field must be unique and cannot be changed after creation.</p>
-</div>
+<p>Provide a unique name and description for the component:</p>
 <table>
 <thead>
 <tr>
@@ -4067,76 +4089,61 @@ document.addEventListener('DOMContentLoaded', function() {
 </thead>
 <tbody>
 <tr>
-<td><strong>Component Display Name</strong></td>
-<td>GitHub MCP Server</td>
+<td><strong>Display Name</strong></td>
+<td><code>Hello World</code></td>
 </tr>
 <tr>
-<td><strong>Component Name</strong></td>
-<td>github-mcp-server</td>
+<td><strong>Name</strong></td>
+<td>This will be automatically generated based on the display name.</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
-<td>Mcp server for GitHub</td>
+<td><code>MI Hello World REST API</code></td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>Click <strong>Create</strong>. This creates the component and lists it under <strong>Component Listing</strong> on the project home page.</p>
+<p>Select <code>WSO2 MI</code> as the <strong>Build Preset</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Create and Deploy</strong>. Choreo initializes the component, builds it, and deploys it to the development environment.</p>
 </li>
 </ol>
-<p>You have successfully created the server. The initial build has been triggered. Please wait until it completes.
-If you need to rebuild the component later, follow the steps below.</p>
-<h2 id="step-2-build">Step 2: Build<a class="headerlink" href="#step-2-build" title="Permanent link">&para;</a></h2>
+<h2 id="step-2-test-the-integration">Step 2: Test the integration<a class="headerlink" href="#step-2-test-the-integration" title="Permanent link">&para;</a></h2>
 <ol>
-<li>On the project home page, click on the <code>GitHub Mcp Server</code> component you created. This takes you to the component overview page.</li>
-<li>In the left navigation menu, click <strong>Build</strong>.</li>
+<li>In the Choreo Console left navigation menu, click <strong>Test</strong> and then click <strong>Console</strong>.</li>
+<li>In the OpenAPI Console, select <strong>Development</strong> from the environment drop-down list.</li>
+<li>Expand the <strong>GET /</strong> operation.</li>
+<li>Click <strong>Try it out</strong>, then click <strong>Execute</strong>. This sends a request to your deployed integration.</li>
 <li>
-<p>On the <strong>Build</strong> page, click <strong>Build Latest</strong>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The build process may take some time. You can track progress in the <strong>Build Details</strong> pane. Once complete, the build status changes to <strong>Success</strong>.</p>
-</div>
+<p>Check the response:</p>
+<ul>
+<li>In the <strong>Response body</strong> section, observe the response. If the integration works as expected, you should see:</li>
+</ul>
+<div class="language-json highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span><span class="nt">&quot;Hello&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Integration&quot;</span><span class="p">}</span>
+</code></pre></div>
+
 </li>
 </ol>
-<p>Now that you have built the component, it's time to deploy the mcp server.</p>
-<h2 id="step-3-deploy">Step 3: Deploy<a class="headerlink" href="#step-3-deploy" title="Permanent link">&para;</a></h2>
+<h2 id="step-4-observe-the-integration">Step 4: Observe the integration<a class="headerlink" href="#step-4-observe-the-integration" title="Permanent link">&para;</a></h2>
 <ol>
-<li>In the left navigation menu, click <strong>Deploy</strong>.</li>
-<li>On the <strong>Set Up</strong> card, click <strong>Configure &amp; Deploy</strong>.</li>
-<li>
-<p>In the <strong>Environment Configurations</strong> pane, click <strong>Add a Configuration</strong> and add following environment variables in the table. Then tick <strong>Mark as a Secret</strong> and save the configuration by clicking <strong>Next</strong> button.</p>
-<table>
-<thead>
-<tr>
-<th><strong>Name</strong></th>
-<th><strong>Value</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>GITHUB_PERSONAL_ACCESS_TOKEN</strong></td>
-<td>YOUR GITHUB PAT</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>In the <strong>File Mount</strong> pane, click <strong>Next</strong> to skip this step.</p>
-</li>
-<li>
-<p>Review the <strong>Endpoint Details</strong> and click <strong>Deploy</strong>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Deploying the service component may take some time. Once deployed, the <strong>Development</strong> environment card indicates the <strong>Deployment Status</strong> as <strong>Active</strong>.</p>
-</div>
+<li>In the Choreo Console left navigation menu, click <strong>Observability</strong> and then select one of the following options to monitor the performance of the integration component:<ul>
+<li><strong>Alerts</strong>: View and configure alerts based on predefined conditions.</li>
+<li><strong>Metrics</strong>: Monitor performance metrics and system statistics.</li>
+<li><strong>Runtime Logs</strong>: Access and analyze runtime execution logs.</li>
+</ul>
 </li>
 </ol>
-<p>Once you have successfully deployed the service, you can test your server. You can view the invoke URL details from the <strong>Test</strong> tab in left navigation menu.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>The path for SSE subscription is <strong>/sse</strong>, and the path for messages is <strong>/messages</strong>.</p>
-</div>
+<p>For more details, see <a href="../../../monitoring-and-insights/observability-overview/">Observability Overview</a>.</p>
+<h2 id="step-5-publish-the-integration-component">Step 5: Publish the integration component<a class="headerlink" href="#step-5-publish-the-integration-component" title="Permanent link">&para;</a></h2>
+<ol>
+<li>In the Choreo Console left navigation menu, click <strong>Manage</strong> and then click <strong>Lifecycle</strong>.</li>
+<li>The <strong>Lifecycle Management</strong> pane shows the current lifecycle stage as <strong>Created</strong>.</li>
+<li>Click <strong>Publish</strong>. This changes the lifecycle stage to <strong>Published</strong> and exposes the integration as an API in the Choreo Developer Portal.</li>
+<li>To view the published API, click <strong>Go to Devportal</strong>. In the Developer Portal, you can manage subscriptions and generate access tokens for testing.</li>
+</ol>
+<p>Now you have successfully exposed a WSO2 MI integration as a REST API in Choreo!</p>
 
 
 
@@ -4163,7 +4170,7 @@ If you need to rebuild the component later, follow the steps below.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../develop-integrations/develop-a-manual-task/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Develop a Manual Task" rel="prev">
+          <a href="../../develop-an-external-consumer/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Develop an External Consumer" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -4172,20 +4179,20 @@ If you need to rebuild the component later, follow the steps below.</p>
                 <span class="md-footer__direction">
                   Previous
                 </span>
-                Develop a Manual Task
+                Develop an External Consumer
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../work-with-the-micro-integrator-runtime-in-choreo/" class="md-footer__link md-footer__link--next" aria-label="Next: Get Started with the Micro Integrator Runtime" rel="next">
+          <a href="../develop-an-event-handler/" class="md-footer__link md-footer__link--next" aria-label="Next: Develop an Event Handler" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-                Get Started with the Micro Integrator Runtime
+                Develop an Event Handler
               </div>
             </div>
             <div class="md-footer__button md-icon">
