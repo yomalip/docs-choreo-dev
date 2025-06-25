@@ -4776,10 +4776,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <h3 id="q-what-is-asgardeo">Q: What is Asgardeo?<a class="headerlink" href="#q-what-is-asgardeo" title="Permanent link">&para;</a></h3>
 <p>Asgardeo is an identity provider (IdP) that allows developers to secure access for consumers, business partners, employees, and APIs. Asgardeo is Choreo’s default IDP. To learn more, visit https://wso2.com/asgardeo/.</p>
 <h3 id="q-why-dont-i-see-the-region-selector-on-the-project-creation-page">Q: Why don’t I see the region selector on the project creation page?<a class="headerlink" href="#q-why-dont-i-see-the-region-selector-on-the-project-creation-page" title="Permanent link">&para;</a></h3>
-<p>The region selector has been removed.Projects derive their region(s) from the Environments available to them through the assigned <a href="https://wso2.com/choreo/docs/devops-and-ci-cd/manage-continuous-deployment-pipelines/">Continuous Deployment Pipeline</a>. Additional Environments can be made available to a Project by defining a new CD Pipeline at the Organization and then assigning it to that Project or adding the environments to the project assigned pipeline.
+<p>The region selector has been removed. Projects derive their region(s) from the Environments available to them through the assigned <a href="https://wso2.com/choreo/docs/devops-and-ci-cd/manage-continuous-deployment-pipelines/">Continuous Deployment (CD) Pipeline</a>. Additional Environments can be made available to a Project by defining a new CD Pipeline at the Organization and then assigning it to that Project or adding the environments to the project assigned pipeline.
 To target a specific region (for example, EU), on a Cloud Data Plane (CDP), you must:</p>
 <ul>
-<li>Create a new Environment (or set of Environments) on the EU CDP under your Organization.</li>
+<li>Create a new Environment (or a set of Environments) on the EU CDP under your Organization.</li>
 <li>Create a new CD Pipeline that deploys to these new Environments on the EU CDP or add the environments to the project assigned pipeline.</li>
 <li>Assign this CD Pipeline to your Project.</li>
 </ul>
