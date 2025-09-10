@@ -1721,7 +1721,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     <li class="md-nav__item">
       <a href="../deploy-an-application-with-buildpacks/" class="md-nav__link">
-        Deploy an Application with Buildpacks
+        Deploy an Application with Build Presets
       </a>
     </li>
   
@@ -3220,6 +3220,20 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
   
+    <li class="md-nav__item">
+      <a href="../../monitoring-and-insights/operational-insights-dashboard/" class="md-nav__link">
+        Operational Insights
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -3228,17 +3242,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_3" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_4" >
       
       
       
-        <label class="md-nav__link" for="__nav_16_3" id="__nav_16_3_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_16_4" id="__nav_16_4_label" tabindex="0">
           Delivery Insights
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_3_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_16_3">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_16_4">
           <span class="md-nav__icon md-icon"></span>
           Delivery Insights
         </label>
@@ -3250,8 +3264,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
     <li class="md-nav__item">
-      <a href="../../monitoring-and-insights/delivery-insights/configure-dora-metrics/" class="md-nav__link">
-        Configure DORA Metrics
+      <a href="../../monitoring-and-insights/delivery-insights/configure-delivery-insights/" class="md-nav__link">
+        Configure Delivery Insights
       </a>
     </li>
   
@@ -3264,8 +3278,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
     <li class="md-nav__item">
-      <a href="../../monitoring-and-insights/delivery-insights/view-dora-metrics/" class="md-nav__link">
-        View DORA Metrics
+      <a href="../../monitoring-and-insights/delivery-insights/view-delivery-insights/" class="md-nav__link">
+        View Delivery Insights
       </a>
     </li>
   
@@ -3292,17 +3306,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_4" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_5" >
       
       
       
-        <label class="md-nav__link" for="__nav_16_4" id="__nav_16_4_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_16_5" id="__nav_16_5_label" tabindex="0">
           Usage Insights
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_4_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_16_4">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_16_5">
           <span class="md-nav__icon md-icon"></span>
           Usage Insights
         </label>
@@ -3384,17 +3398,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_7" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_8" >
       
       
       
-        <label class="md-nav__link" for="__nav_16_7" id="__nav_16_7_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_16_8" id="__nav_16_8_label" tabindex="0">
           Work with the Choreo Insights API
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_7_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_16_7">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_16_8">
           <span class="md-nav__icon md-icon"></span>
           Work with the Choreo Insights API
         </label>
@@ -4130,7 +4144,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </table>
 </li>
 <li>
-<p>Select <strong>Ballerina</strong> as the build pack.</p>
+<p>Select <strong>Ballerina</strong> as the build preset.</p>
 </li>
 <li>Provide a display name, a unique name and description for the component.</li>
 <li>Click <strong>Create</strong>.</li>
@@ -4199,7 +4213,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <ul>
-<li><strong>Buildpack</strong> specifies the type of build to run depending on the implementation of the component. It converts the integration code into a Docker image that can run on Choreo cloud. If an integration is developed using <a href="https://wso2.com/integration/integration-studio/">WSO2 Integration Studio</a>, select <strong>Micro Integrator</strong> as the buildpack. If an integration is developed using the <a href="https://ballerina.io">Ballerina language</a>, select <strong>Ballerina</strong> as the buildpack.</li>
+<li><strong>Build preset</strong> specifies the type of build to run depending on the implementation of the component. It converts the integration code into a Docker image that can run on Choreo cloud. If an integration is developed using <a href="https://wso2.com/integration/integration-studio/">WSO2 Integration Studio</a>, select <strong>Micro Integrator</strong> as the build preset. If an integration is developed using the <a href="https://ballerina.io">Ballerina language</a>, select <strong>Ballerina</strong> as the build preset.</li>
 <li><strong>Project Path</strong> specifies the location of the project to build the component.</li>
 </ul>
 </div>

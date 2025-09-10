@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://wso2.com/choreo/docs/monitoring-and-insights/insights-overview/">
       
       
-        <link rel="prev" href="../delivery-insights/view-dora-metrics/">
+        <link rel="prev" href="../delivery-insights/view-delivery-insights/">
       
       
         <link rel="next" href="../generate-custom-reports/">
@@ -1645,7 +1645,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     <li class="md-nav__item">
       <a href="../../develop-components/deploy-an-application-with-buildpacks/" class="md-nav__link">
-        Deploy an Application with Buildpacks
+        Deploy an Application with Build Presets
       </a>
     </li>
   
@@ -3144,6 +3144,20 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
   
+    <li class="md-nav__item">
+      <a href="../operational-insights-dashboard/" class="md-nav__link">
+        Operational Insights
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -3152,17 +3166,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_3" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_4" >
       
       
       
-        <label class="md-nav__link" for="__nav_16_3" id="__nav_16_3_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_16_4" id="__nav_16_4_label" tabindex="0">
           Delivery Insights
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_3_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_16_3">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_16_4">
           <span class="md-nav__icon md-icon"></span>
           Delivery Insights
         </label>
@@ -3174,8 +3188,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
     <li class="md-nav__item">
-      <a href="../delivery-insights/configure-dora-metrics/" class="md-nav__link">
-        Configure DORA Metrics
+      <a href="../delivery-insights/configure-delivery-insights/" class="md-nav__link">
+        Configure Delivery Insights
       </a>
     </li>
   
@@ -3188,8 +3202,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
     <li class="md-nav__item">
-      <a href="../delivery-insights/view-dora-metrics/" class="md-nav__link">
-        View DORA Metrics
+      <a href="../delivery-insights/view-delivery-insights/" class="md-nav__link">
+        View Delivery Insights
       </a>
     </li>
   
@@ -3216,17 +3230,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16_4" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16_5" checked>
       
       
       
-        <label class="md-nav__link" for="__nav_16_4" id="__nav_16_4_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_16_5" id="__nav_16_5_label" tabindex="0">
           Usage Insights
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_4_label" aria-expanded="true">
-        <label class="md-nav__title" for="__nav_16_4">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_5_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_16_5">
           <span class="md-nav__icon md-icon"></span>
           Usage Insights
         </label>
@@ -3425,17 +3439,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_7" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_8" >
       
       
       
-        <label class="md-nav__link" for="__nav_16_7" id="__nav_16_7_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_16_8" id="__nav_16_8_label" tabindex="0">
           Work with the Choreo Insights API
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_7_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_16_7">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_16_8">
           <span class="md-nav__icon md-icon"></span>
           Work with the Choreo Insights API
         </label>
@@ -4242,7 +4256,16 @@ document.addEventListener('DOMContentLoaded', function() {
 </li>
 </ul>
 <h3 id="errors">Errors<a class="headerlink" href="#errors" title="Permanent link">&para;</a></h3>
-<p>The <strong>Errors</strong> page shows information related to erroneous API calls that are received by your system. The errors are categorized based on the error type. You can further drill down using the error subtypes. Use this page as the starting point for debugging any API errors.</p>
+<p>The <strong>Errors</strong> page shows information related to erroneous API calls received by your system. It allows you to analyze errors by both error categories and HTTP status codes.</p>
+<ul>
+<li>
+<p><strong>Error Category View</strong>: An error category represents a type of faulty scenario identified at the API gateway level. In these cases, the API request may not reach the API target, and the user will receive an error message and an HTTP error code. Errors are grouped into categories and subcategories based on their nature (such as authentication, connectivity, throttling, or other issues). The chart displays these categories and their subcategory errors, helping you quickly identify and analyze the types of errors occurring in your APIs.</p>
+</li>
+<li>
+<p><strong>Status Code View</strong>: Status code-based insights provide information based on the HTTP status codes received by the client, regardless of whether the error was generated by the API gateway or the backend target. This is different from the error category chart, which groups errors by the type of faulty scenario identified at the gateway level. For example, an authentication error category may result in different status codes like 401 or 403, depending on the specific issue. These errors may not reach the target and are sent to the client by the gateway. Conversely, a request might pass through the gateway but be rejected by the target (e.g., a 403 due to a payload validation issue at the backend). In the status code chart, both errors would appear as 403 and 401, while in the category chart, they would be grouped under authentication errors. Thus, the status code view shows the distribution of error codes received by the client, independent of the error category, while the category view groups errors by their underlying cause.</p>
+</li>
+</ul>
+<p>Use this page as the starting point for debugging any API errors.</p>
 <p><a class="glightbox" href="../../assets/img/monitoring-and-insights/api-insights/error-page-full.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Error statistics" class="cInlineImage-full" src="../../assets/img/monitoring-and-insights/api-insights/error-page-full.png" /></a></p>
 <p>You can filter the information displayed in the widgets as follows:</p>
 <table>
@@ -4510,7 +4533,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../delivery-insights/view-dora-metrics/" class="md-footer__link md-footer__link--prev" aria-label="Previous: View DORA Metrics" rel="prev">
+          <a href="../delivery-insights/view-delivery-insights/" class="md-footer__link md-footer__link--prev" aria-label="Previous: View Delivery Insights" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -4519,7 +4542,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span class="md-footer__direction">
                   Previous
                 </span>
-                View DORA Metrics
+                View Delivery Insights
               </div>
             </div>
           </a>

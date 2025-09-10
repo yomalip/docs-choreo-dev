@@ -1645,7 +1645,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     <li class="md-nav__item">
       <a href="../deploy-an-application-with-buildpacks/" class="md-nav__link">
-        Deploy an Application with Buildpacks
+        Deploy an Application with Build Presets
       </a>
     </li>
   
@@ -3295,6 +3295,20 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
   
+    <li class="md-nav__item">
+      <a href="../../monitoring-and-insights/operational-insights-dashboard/" class="md-nav__link">
+        Operational Insights
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -3303,17 +3317,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_3" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_4" >
       
       
       
-        <label class="md-nav__link" for="__nav_16_3" id="__nav_16_3_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_16_4" id="__nav_16_4_label" tabindex="0">
           Delivery Insights
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_3_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_16_3">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_16_4">
           <span class="md-nav__icon md-icon"></span>
           Delivery Insights
         </label>
@@ -3325,8 +3339,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
     <li class="md-nav__item">
-      <a href="../../monitoring-and-insights/delivery-insights/configure-dora-metrics/" class="md-nav__link">
-        Configure DORA Metrics
+      <a href="../../monitoring-and-insights/delivery-insights/configure-delivery-insights/" class="md-nav__link">
+        Configure Delivery Insights
       </a>
     </li>
   
@@ -3339,8 +3353,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
     <li class="md-nav__item">
-      <a href="../../monitoring-and-insights/delivery-insights/view-dora-metrics/" class="md-nav__link">
-        View DORA Metrics
+      <a href="../../monitoring-and-insights/delivery-insights/view-delivery-insights/" class="md-nav__link">
+        View Delivery Insights
       </a>
     </li>
   
@@ -3367,17 +3381,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_4" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_5" >
       
       
       
-        <label class="md-nav__link" for="__nav_16_4" id="__nav_16_4_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_16_5" id="__nav_16_5_label" tabindex="0">
           Usage Insights
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_4_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_16_4">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_16_5">
           <span class="md-nav__icon md-icon"></span>
           Usage Insights
         </label>
@@ -3459,17 +3473,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_7" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_8" >
       
       
       
-        <label class="md-nav__link" for="__nav_16_7" id="__nav_16_7_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_16_8" id="__nav_16_8_label" tabindex="0">
           Work with the Choreo Insights API
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_7_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_16_7">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_16_8">
           <span class="md-nav__icon md-icon"></span>
           Work with the Choreo Insights API
         </label>
@@ -4228,7 +4242,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul>
-<li>For components built using <strong>Buildpacks</strong>, replace <code>build-context-path</code> with the <code>&lt;project-directory&gt;</code>. 
+<li>For components built using <strong>Build presets</strong>, replace <code>build-context-path</code> with the <code>&lt;project-directory&gt;</code>. 
 For example, <code>&lt;project-directory&gt;/.choreo/component.yaml</code>.</li>
 <li>For components built using <strong>Docker</strong>, replace <code>build-context-path</code> with the <code>&lt;docker-context-path&gt;</code>. 
 For example, <code>&lt;docker-context-path&gt;/.choreo/component.yaml</code>.</li>
@@ -4417,7 +4431,7 @@ For example, <code>&lt;docker-context-path&gt;/.choreo/component.yaml</code>.</l
 <tr>
 <td><strong>schemaFilePath</strong></td>
 <td>Required</td>
-<td>The file path to the swagger definition  or AsyncAPI 2.0 specification file. Defaults to the wildcard route if not specified. This field should be a relative path to the project path when using <strong>Java</strong>, <strong>Python</strong>, <strong>NodeJS</strong>, <strong>Go</strong>, <strong>PHP</strong>, <strong>Ruby</strong>, or <strong>WSO2 MI</strong> buildpacks. For REST or WebSocket endpoint types, when using the <strong>Ballerina</strong> or <strong>Dockerfile</strong> buildpack, the path should be relative to the component root or Docker context.</td>
+<td>The file path to the swagger definition  or AsyncAPI 2.0 specification file. Defaults to the wildcard route if not specified. This field should be a relative path to the project path when using <strong>Java</strong>, <strong>Python</strong>, <strong>NodeJS</strong>, <strong>Go</strong>, <strong>PHP</strong>, <strong>Ruby</strong>, or <strong>WSO2 MI</strong> build presets. For REST or WebSocket endpoint types, when using the <strong>Ballerina</strong> or <strong>Dockerfile</strong> build presets, the path should be relative to the component root or Docker context.</td>
 </tr>
 </tbody>
 </table>
@@ -4693,7 +4707,7 @@ For example, <code>&lt;docker-context-path&gt;/.choreo/component.yaml</code>.</l
 <tr>
 <td><strong>schemaFilePath</strong></td>
 <td>Required</td>
-<td>The file path to the swagger definition  or AsyncAPI 2.0 specification file. Defaults to the wildcard route if not specified. This field should be a relative path to the project path when using <strong>Java</strong>, <strong>Python</strong>, <strong>NodeJS</strong>, <strong>Go</strong>, <strong>PHP</strong>, <strong>Ruby</strong>, or <strong>WSO2 MI</strong> buildpacks. For REST or WebSocket endpoint types, when using the <strong>Ballerina</strong> or <strong>Dockerfile</strong> buildpack, the path should be relative to the component root or Docker context.</td>
+<td>The file path to the swagger definition  or AsyncAPI 2.0 specification file. Defaults to the wildcard route if not specified. This field should be a relative path to the project path when using <strong>Java</strong>, <strong>Python</strong>, <strong>NodeJS</strong>, <strong>Go</strong>, <strong>PHP</strong>, <strong>Ruby</strong>, or <strong>WSO2 MI</strong> build presets. For REST or WebSocket endpoint types, when using the <strong>Ballerina</strong> or <strong>Dockerfile</strong> build presets, the path should be relative to the component root or Docker context.</td>
 </tr>
 </tbody>
 </table>
@@ -4902,7 +4916,7 @@ In the <code>endpoints</code> section of the <code>component.yaml</code> file, y
 <tr>
 <td><strong>schemaFilePath</strong></td>
 <td>Required</td>
-<td>The file path to the swagger definition or AsyncAPI 2.0 specification file. Defaults to the wildcard route if not specified. This field should be a relative path to the project path when using <strong>Java</strong>, <strong>Python</strong>, <strong>NodeJS</strong>, <strong>Go</strong>, <strong>PHP</strong>, <strong>Ruby</strong>, or <strong>WSO2 MI</strong> buildpacks. For REST or WebSocket endpoint types, when using the <strong>Ballerina</strong> or <strong>Dockerfile</strong> buildpack, the path should be relative to the component root or Docker context.</td>
+<td>The file path to the swagger definition or AsyncAPI 2.0 specification file. Defaults to the wildcard route if not specified. This field should be a relative path to the project path when using <strong>Java</strong>, <strong>Python</strong>, <strong>NodeJS</strong>, <strong>Go</strong>, <strong>PHP</strong>, <strong>Ruby</strong>, or <strong>WSO2 MI</strong> build presets. For REST or WebSocket endpoint types, when using the <strong>Ballerina</strong> or <strong>Dockerfile</strong> build presets, the path should be relative to the component root or Docker context.</td>
 </tr>
 </tbody>
 </table>
@@ -5146,7 +5160,7 @@ In the <code>endpoints</code> section of the <code>component.yaml</code> file, y
 <tr>
 <td><strong>schemaFilePath</strong></td>
 <td>Required</td>
-<td>The swagger definition file path. Defaults to the wildcard route if not provided. This field should be a relative path to the project path when using the <strong>Java</strong>, <strong>Python</strong>, <strong>NodeJS</strong>, <strong>Go</strong>, <strong>PHP</strong>, <strong>Ruby</strong>, and <strong>WSO2 MI</strong> buildpacks. For REST endpoint types, when using the <strong>Ballerina</strong> or <strong>Dockerfile</strong> buildpack, this field should be a relative path to the component root or Docker context.</td>
+<td>The swagger definition file path. Defaults to the wildcard route if not provided. This field should be a relative path to the project path when using the <strong>Java</strong>, <strong>Python</strong>, <strong>NodeJS</strong>, <strong>Go</strong>, <strong>PHP</strong>, <strong>Ruby</strong>, and <strong>WSO2 MI</strong> build presets. For REST endpoint types, when using the <strong>Ballerina</strong> or <strong>Dockerfile</strong> build presets, this field should be a relative path to the component root or Docker context.</td>
 </tr>
 </tbody>
 </table>

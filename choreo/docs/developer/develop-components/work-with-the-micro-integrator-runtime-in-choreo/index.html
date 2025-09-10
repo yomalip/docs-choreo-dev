@@ -1803,7 +1803,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     <li class="md-nav__item">
       <a href="../deploy-an-application-with-buildpacks/" class="md-nav__link">
-        Deploy an Application with Buildpacks
+        Deploy an Application with Build Presets
       </a>
     </li>
   
@@ -3302,6 +3302,20 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
   
+    <li class="md-nav__item">
+      <a href="../../monitoring-and-insights/operational-insights-dashboard/" class="md-nav__link">
+        Operational Insights
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -3310,17 +3324,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_3" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_4" >
       
       
       
-        <label class="md-nav__link" for="__nav_16_3" id="__nav_16_3_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_16_4" id="__nav_16_4_label" tabindex="0">
           Delivery Insights
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_3_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_16_3">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_16_4">
           <span class="md-nav__icon md-icon"></span>
           Delivery Insights
         </label>
@@ -3332,8 +3346,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
     <li class="md-nav__item">
-      <a href="../../monitoring-and-insights/delivery-insights/configure-dora-metrics/" class="md-nav__link">
-        Configure DORA Metrics
+      <a href="../../monitoring-and-insights/delivery-insights/configure-delivery-insights/" class="md-nav__link">
+        Configure Delivery Insights
       </a>
     </li>
   
@@ -3346,8 +3360,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
     <li class="md-nav__item">
-      <a href="../../monitoring-and-insights/delivery-insights/view-dora-metrics/" class="md-nav__link">
-        View DORA Metrics
+      <a href="../../monitoring-and-insights/delivery-insights/view-delivery-insights/" class="md-nav__link">
+        View Delivery Insights
       </a>
     </li>
   
@@ -3374,17 +3388,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_4" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_5" >
       
       
       
-        <label class="md-nav__link" for="__nav_16_4" id="__nav_16_4_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_16_5" id="__nav_16_5_label" tabindex="0">
           Usage Insights
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_4_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_16_4">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_16_5">
           <span class="md-nav__icon md-icon"></span>
           Usage Insights
         </label>
@@ -3466,17 +3480,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_7" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16_8" >
       
       
       
-        <label class="md-nav__link" for="__nav_16_7" id="__nav_16_7_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_16_8" id="__nav_16_8_label" tabindex="0">
           Work with the Choreo Insights API
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_7_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_16_7">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_16_8">
           <span class="md-nav__icon md-icon"></span>
           Work with the Choreo Insights API
         </label>
@@ -4480,7 +4494,7 @@ configuration parameters, see the <a href="https://mi.docs.wso2.com/en/latest/re
 <li><a href="https://mi.docs.wso2.com/en/latest/develop/creating-artifacts/adding-connectors/">Adding Connectors</a></li>
 </ul>
 <h2 id="deploying-integrations-in-choreo">Deploying integrations in Choreo<a class="headerlink" href="#deploying-integrations-in-choreo" title="Permanent link">&para;</a></h2>
-<p>WSO2 MI buildpack is where you can deploy integrations developed with WSO2 Micro Integrator as an API. In this preset, you have three different ways to define endpoints. Choreo gives priority to the definition of endpoints in the below-mentioned order. </p>
+<p>WSO2 MI build preset is where you can deploy integrations developed with WSO2 Micro Integrator as an API. In this preset, you have three different ways to define endpoints. Choreo gives priority to the definition of endpoints in the below-mentioned order. </p>
 <ol>
 <li>
 <p><strong>Using component.yaml file</strong>
@@ -4502,7 +4516,7 @@ If <code>component.yaml</code> is not provided and if the source Micro Integrato
 <p>If you are currently using <code>component-config.yaml</code> or <code>endpoints.yaml</code> configuration files, see the respective <a href="../manage-component-source-configurations/#migration-guide">migration guide</a> for instructions on migrating to the recommended <code>component.yaml</code> configuration file.</p>
 </div>
 <h2 id="explore-choreo-examples-on-github">Explore Choreo examples on GitHub<a class="headerlink" href="#explore-choreo-examples-on-github" title="Permanent link">&para;</a></h2>
-<p>For a hands-on experience with MI-based integrations in Choreo, we recommend exploring our <a href="../../choreo-samples/samples-overview/">Choreo Samples</a>. You can filter out the samples based on the buildpack <code>WSO2 MI</code>.</p>
+<p>For a hands-on experience with MI-based integrations in Choreo, we recommend exploring our <a href="../../choreo-samples/samples-overview/">Choreo Samples</a>. You can filter out the samples based on the build preset <code>WSO2 MI</code>.</p>
 
 
 
